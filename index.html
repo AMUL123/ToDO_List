@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full sm:w-[500px] mx-auto h-auto bg-gray-200 p-6 rounded-lg shadow-lg mt-10">
+        <h1 class="text-center text-xl font-bold" >Todo List</h1>
+
+        <form action="" id="todoForm" class="grid sm:grid-cols-[70%_auto] sm:grid-cols-1 gap-[20px] mt-[20px]">
+            <input type="text" class="border-[1px] border-[#ccc] h-[45px] bg-[transparent] te pl-[20px]"
+                placeholder="write your task" id="input">
+            <button
+            type="submit"  class="bg-[green] px-[10px] rounded-[5px] py-[12px] text-white hover:bg-green-500 duration-300ms" id="button">Add Task</button>
+        </form>
+        <div class="w-full bg-yellow-500 p-4 mt-4 rounded-md">
+            <h3 class="text-lg font-semibold">Your Task</h3>
+            <ul id="ul" class="list-disc list-inside mt-2" >
+                
+            </ul>
+        </div>
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
